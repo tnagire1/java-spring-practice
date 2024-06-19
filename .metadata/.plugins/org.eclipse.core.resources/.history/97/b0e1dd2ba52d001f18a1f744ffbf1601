@@ -1,0 +1,13 @@
+package com.teja.file;
+
+import java.nio.file.Files;
+
+public class FileRunner {
+
+	public static void main(String[] args) {
+
+		Files.list(Path.get("."))
+
+	}
+
+}

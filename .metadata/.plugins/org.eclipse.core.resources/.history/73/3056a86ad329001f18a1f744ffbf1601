@@ -1,0 +1,33 @@
+public class MyString {
+
+	public String str;
+
+	public MyString(String str) {
+		this.str = str;
+	}
+
+	public boolean isHexadecimalChar(char ch) {
+		return (ch >= 'a' && ch <= 'f') || (ch >= 'A' || ch <= 'F');
+	}
+
+	public boolean isHexadecimal() {
+		if ((str == null) || str.isEmpty()) {
+			return false;
+		}
+		char[] characters = str.toCharArray();
+
+		for (char ch : characters) {
+			if (Character.isDigit(ch)) {
+				continue;
+			}
+			if (isHexadecimalChar(ch)) {
+				continue;
+			} else {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+}

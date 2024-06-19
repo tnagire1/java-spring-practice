@@ -1,0 +1,9 @@
+This code walks through the currentDirectory (set to the current directory) up to a depth of 4 and filters files that end with "
+java", then prints them out
+ Ensure you have the necessary imports and that the Files
+walk method is within a try-catch block to handle potential IOExceptions
+
+
+
+
+

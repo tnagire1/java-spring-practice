@@ -1,0 +1,31 @@
+package com.teja.exceptions;
+
+class Amount {
+
+	String currency;
+	int amount;
+
+	public Amount(String currency, int amount) {
+		super();
+		this.currency = currency;
+		this.amount = amount;
+	}
+
+	public String add(Amount that) {
+
+		return this.amount + that.amount + " " + this.currency;
+
+	}
+}
+
+public class ThrowExceptionRunner {
+
+	public static void main(String[] args) {
+
+		Amount amount1 = new Amount("USD", 20);
+		Amount amount2 = new Amount("USD", 20);
+
+		System.out.println(amount1.add(amount2));
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.teja.generics;
+
+import java.util.ArrayList;
+
+public class GenericArrayList{
+
+
+}

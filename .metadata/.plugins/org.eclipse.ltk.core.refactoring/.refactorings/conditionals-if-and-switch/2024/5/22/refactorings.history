@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static void switchCaluclator(int number1, int number2, int operation, int result)&apos; from &apos;com.teja.conditionals.MenuRunner.main(...)&apos; to &apos;com.teja.conditionals.MenuRunner&apos;&#x0A;- Original project: &apos;conditionals-if-and-switch&apos;&#x0A;- Method name: &apos;switchCaluclator&apos;&#x0A;- Destination type: &apos;com.teja.conditionals.MenuRunner&apos;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;switchCaluclator&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;com.teja.conditionals{MenuRunner.java" name="switchCaluclator" replace="false" selection="1084 339" stamp="1717190138311" version="1.0" visibility="2"/>
+</session>

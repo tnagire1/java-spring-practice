@@ -1,0 +1,25 @@
+package com.teja.collections;
+
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class QueueRunner {
+
+	public static void main(String[] args) {
+
+		List<Student> numbers = List.of(new Student(1, "Teja"), new Student(2, "Akhil"), new Student(3, "Sushu"));
+
+		Queue<Student> queue = new PriorityQueue<Student>(new DescendingComparator());
+
+		for (int i = 0; i < numbers.size(); i++) {
+			queue.offer(numbers.get(i));
+		}
+
+		System.out.println(queue.poll());
+		System.out.println(queue.poll());
+		System.out.println(queue.poll());
+
+	}
+
+}

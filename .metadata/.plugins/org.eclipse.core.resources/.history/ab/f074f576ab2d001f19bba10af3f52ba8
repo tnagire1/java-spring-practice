@@ -1,0 +1,21 @@
+package com.teja.files;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.function.Predicate;
+
+public class FileRunner {
+
+	public static void main(String[] args) throws IOException {
+		Path currentDirectory = Paths.get(".");
+		// Files.list(currentDirectory).forEach(System.out::println);
+
+		Predicate<? super Path> predicate = element -> element.toString().endsWith("java");
+
+		Files.walk(currentDirectory, 5).filter(predicate).forEach(System.out::println);
+
+	}
+
+}

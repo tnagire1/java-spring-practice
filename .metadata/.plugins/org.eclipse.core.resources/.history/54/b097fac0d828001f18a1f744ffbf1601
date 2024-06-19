@@ -1,0 +1,23 @@
+package com.teja.collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class StudentsCollectionRunner {
+
+	public static void main(String[] args) {
+
+		List<Student> students = List.of(new Student(108, "Teja"), new Student(101, "Akhil"),
+				new Student(102, "Amulya"));
+
+		List<Student> studentsal = new ArrayList<>(students);
+
+		 Collections.sort(studentsal);
+		//studentsal.sort(null);
+
+		System.out.println(studentsal);
+
+	}
+
+}

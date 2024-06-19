@@ -1,0 +1,10 @@
+package com.teja.fp;
+
+public class FunctionalProgrammingRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
