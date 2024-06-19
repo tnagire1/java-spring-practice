@@ -1,0 +1,7 @@
+package com.teja.generics;
+
+public class GenericArrayList {
+	
+	ArrayList<String> list=new ArrayList<>();
+
+}

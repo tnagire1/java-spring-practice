@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.teja.loops.practice.ForLoopRunner&apos; to &apos;MyNumber&apos;&#x0A;- Original project: &apos;loops-in-java&apos;&#x0A;- Original element: &apos;com.teja.loops.practice.ForLoopRunner&apos;&#x0A;- Renamed element: &apos;com.teja.loops.practice.MyNumber&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ForLoopRunner&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.teja.loops.practice{ForLoopRunner.java[ForLoopRunner" matchStrategy="1" name="MyNumber" qualified="false" references="true" similarDeclarations="false" stamp="1717206295433" textual="false" version="1.0"/>
+</session>

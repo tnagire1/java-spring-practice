@@ -1,0 +1,17 @@
+package com.teja.exceptions;
+
+public class ExceptionHandlingRunner {
+
+	public static void main(String[] args) {
+
+	}
+
+	static method1()
+	{
+		String str = null;
+		str.length();
+		System.out.println("Method1 Ended");
+
+	}
+
+}

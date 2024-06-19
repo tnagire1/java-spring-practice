@@ -1,0 +1,13 @@
+package com.teja.collections;
+
+import java.util.Comparator;
+
+public class DescendingComparator implements Comparator<Student> {
+
+	@Override
+	public int compare(Student o2, Student o1) {
+
+		return Integer.compare(o2.getId(), o1.getId());
+	}
+
+}

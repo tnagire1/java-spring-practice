@@ -1,0 +1,20 @@
+package com.teja.files;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Arrays;
+
+public class FileRunner {
+
+	public static void main(String[] args) throws IOException {
+		Path currentDirectory = Paths.get("./resources/Data.txt");
+		Path writeDirectory = Paths.get("./resources/WriteData.txt");
+		String[] lines = Files.lines(currentDirectory).flatMap(element -> element.split("\\."));
+
+		Files.write(writeDirectory, Arrays.stream(lines));
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.teja.files;
+
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class FileRunner {
+
+	public static void main(String[] args) throws IOException {
+		Paths currentDirectory = Paths.get(".");
+
+	}
+
+}

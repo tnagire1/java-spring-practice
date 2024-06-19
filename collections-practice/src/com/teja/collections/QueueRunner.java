@@ -1,0 +1,39 @@
+package com.teja.collections;
+
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+class DescendingComparator implements Comparator<Student> {
+
+	@Override
+	public int compare(Student o1, Student o2) {
+
+		return Integer.compare(o2.getId(), o1.getId());
+	}
+
+}
+
+public class QueueRunner {
+
+	public static void main(String[] args) {
+
+		List<Student> numbers = List.of(new Student(1, "Teja"), new Student(2, "Akhil"), new Student(3, "Sushu"));
+
+		Queue<Student> queue = new PriorityQueue<>(new DescendingComparator());
+
+		Iterator<Student> iterator = numbers.iterator();
+
+		while (iterator.hasNext()) {
+			queue.offer(iterator.next());
+		}
+
+		System.out.println(queue.poll());
+		System.out.println(queue.poll());
+		System.out.println(queue.poll());
+
+	}
+
+}

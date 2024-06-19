@@ -1,0 +1,26 @@
+package com.teja.collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapRunner {
+
+	public static void main(String[] args) {
+		String inputSentence= "I am a I ,very God am i";
+		inputSentence.toLowerCase();
+		Map<Character,Integer> sentence=new HashMap<>();
+		
+		
+		for(int i=0; i < inputSentence.length();i++)
+		{
+			char currentCharacter=inputSentence.charAt(i);
+			if(sentence.isEmpty()||sentence.get(currentCharacter) ==null)
+			{
+				
+			}
+			
+		}
+
+	}
+
+}

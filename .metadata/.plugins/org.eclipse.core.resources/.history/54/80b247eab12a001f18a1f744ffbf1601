@@ -1,0 +1,49 @@
+package com.teja.generics;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GenericsRunner {
+
+	static <E extends Number> double sumOfNumbers(ArrayList<E> list) {
+		double sum = 0.0;
+
+		for (E l : list) {
+			sum += l.doubleValue();
+		}
+		return sum;
+	}
+
+	static <E extends List> void duplicateList(E list) {
+
+		list.addAll(list;
+
+		System.out.println(list);
+	}
+
+	public static void main(String[] args) {
+
+		ArrayList<Double> listDouble = new ArrayList<>(List.of(1.0, 2.0, 3.0));
+		duplicateList(listDouble);
+		ArrayList<Integer> listInteger = new ArrayList<>(List.of(5, 4, 3));
+		duplicateList(listInteger);
+		System.out.println(sumOfNumbers(listInteger));
+
+		GenericArrayList<String> list = new GenericArrayList<>();
+
+		list.addElement("Teja");
+		list.addElement("Sushu");
+		list.removeElement("Teja");
+		/// System.out.println(list);
+		// System.out.println(list.getIndex(0));
+
+		GenericArrayList<Integer> list2 = new GenericArrayList<>();
+
+		list2.addElement(Integer.valueOf(1));
+		list2.addElement(Integer.valueOf(2));
+		list2.removeElement(Integer.valueOf(1));
+		// System.out.println(list2.getIndex(0));
+		// System.out.println(list2);
+	}
+
+}

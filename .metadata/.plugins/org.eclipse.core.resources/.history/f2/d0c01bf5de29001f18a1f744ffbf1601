@@ -1,0 +1,22 @@
+package com.teja.generics;
+
+import java.util.ArrayList;
+
+public class GenericArrayList {
+
+	ArrayList<String> list = new ArrayList<String>();
+
+	void addElement(String str) {
+		list.add(str);
+	}
+
+	void removeElement(String str) {
+		list.remove(str);
+	}
+
+	@Override
+	String toString() {
+		return list.toString();
+	}
+
+}
