@@ -2,10 +2,15 @@ package com.teja.learn_spring_frame_work.injection.examples;
 
 import java.util.Arrays;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
+
+@Component
+record ExampleClass2() {
+}
 
 @Component
 class ExampleClass {
@@ -22,6 +27,7 @@ class ExampleClass {
 		this.dependency2 = dependency2;
 	}
 
+	@Autowired
 	public ExampleClass(Dependency1 dependency1, Dependency2 dependency2) {
 		super();
 		this.dependency1 = dependency1;
@@ -31,11 +37,12 @@ class ExampleClass {
 	@Override
 	public String toString() {
 
-		StringBuffer newString = new StringBuffer();
+		StringBuilder newString = new StringBuilder();
 
 		newString.append("Using:  ");
 		newString.append(dependency1);
 		newString.append(dependency2);
+
 		return newString.toString();
 	}
 
